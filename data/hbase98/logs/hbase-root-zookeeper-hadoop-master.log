@@ -1,0 +1,382 @@
+Wed May 10 09:12:31 UTC 2017 Starting zookeeper on hadoop-master
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 30718
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1048576
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) unlimited
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2017-05-10 09:12:32,077 INFO  [main] quorum.QuorumPeerConfig: Defaulting to majority quorums
+2017-05-10 09:12:32,156 DEBUG [main] hadoop.hbase: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase
+2017-05-10 09:12:32,157 DEBUG [main] util.UnsafeAvailChecker: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAvailChecker
+2017-05-10 09:12:32,157 DEBUG [main] zookeeper.ZKConfig: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.zookeeper.ZKConfig
+2017-05-10 09:12:32,157 DEBUG [main] util.VersionInfo: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.util.VersionInfo
+2017-05-10 09:12:32,158 DEBUG [main] util.UnsafeAccess: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAccess
+2017-05-10 09:12:32,158 DEBUG [main] hbase.HBaseConfiguration: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.HBaseConfiguration
+2017-05-10 09:12:32,159 DEBUG [main] util.Bytes: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@7e244b5, name=log4j:logger=org.apache.hadoop.hbase.util.Bytes
+2017-05-10 09:12:32,159 INFO  [main] quorum.QuorumPeerMain: Starting quorum peer
+2017-05-10 09:12:32,170 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2017-05-10 09:12:32,185 INFO  [main] quorum.QuorumPeer: tickTime set to 3000
+2017-05-10 09:12:32,185 INFO  [main] quorum.QuorumPeer: minSessionTimeout set to -1
+2017-05-10 09:12:32,185 INFO  [main] quorum.QuorumPeer: maxSessionTimeout set to 90000
+2017-05-10 09:12:32,185 INFO  [main] quorum.QuorumPeer: initLimit set to 10
+2017-05-10 09:12:32,196 INFO  [main] quorum.QuorumPeer: currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-10 09:12:32,242 INFO  [main] quorum.QuorumPeer: acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-10 09:12:32,316 INFO  [Thread-2] quorum.QuorumCnxManager: My election bind port: hadoop-master/172.18.0.2:3888
+2017-05-10 09:12:32,318 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.3:45466
+2017-05-10 09:12:32,326 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,327 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: LOOKING
+2017-05-10 09:12:32,328 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.FastLeaderElection: New election. My id =  0, proposed zxid=0x0
+2017-05-10 09:12:32,329 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,331 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-10 09:12:32,331 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,331 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-10 09:12:32,344 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:34696
+2017-05-10 09:12:32,345 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,345 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,345 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:34698
+2017-05-10 09:12:32,345 WARN  [SendWorker:2] quorum.QuorumCnxManager: Exception when using channel: for id 2 my id = 0 error = java.net.SocketException: Broken pipe (Write failed)
+2017-05-10 09:12:32,346 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,346 WARN  [SendWorker:2] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-10 09:12:32,346 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-10 09:12:32,348 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Connection broken for id 2, my id = 0, error = 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:191)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.net.SocketInputStream.read(SocketInputStream.java:211)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:765)
+2017-05-10 09:12:32,349 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-10 09:12:32,547 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: FOLLOWING
+2017-05-10 09:12:32,589 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: TCP NoDelay set to: true
+2017-05-10 09:12:32,594 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-05-10 09:12:32,594 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:host.name=hadoop-master
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.version=1.7.0_121
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.class.path=/root/hbase98/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar:/root/hbase98/bin/..:/root/hbase98/bin/../lib/activation-1.1.jar:/root/hbase98/bin/../lib/aopalliance-1.0.jar:/root/hbase98/bin/../lib/asm-3.1.jar:/root/hbase98/bin/../lib/avro-1.7.4.jar:/root/hbase98/bin/../lib/commons-beanutils-1.7.0.jar:/root/hbase98/bin/../lib/commons-beanutils-core-1.8.0.jar:/root/hbase98/bin/../lib/commons-cli-1.2.jar:/root/hbase98/bin/../lib/commons-codec-1.7.jar:/root/hbase98/bin/../lib/commons-collections-3.2.2.jar:/root/hbase98/bin/../lib/commons-compress-1.4.1.jar:/root/hbase98/bin/../lib/commons-configuration-1.6.jar:/root/hbase98/bin/../lib/commons-daemon-1.0.13.jar:/root/hbase98/bin/../lib/commons-digester-1.8.jar:/root/hbase98/bin/../lib/commons-el-1.0.jar:/root/hbase98/bin/../lib/commons-httpclient-3.1.jar:/root/hbase98/bin/../lib/commons-io-2.4.jar:/root/hbase98/bin/../lib/commons-lang-2.6.jar:/root/hbase98/bin/../lib/commons-logging-1.1.1.jar:/root/hbase98/bin/../lib/commons-math-2.1.jar:/root/hbase98/bin/../lib/commons-net-3.1.jar:/root/hbase98/bin/../lib/findbugs-annotations-1.3.9-1.jar:/root/hbase98/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/root/hbase98/bin/../lib/grizzly-framework-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-server-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-servlet-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-rcm-2.1.2.jar:/root/hbase98/bin/../lib/guava-12.0.1.jar:/root/hbase98/bin/../lib/guice-3.0.jar:/root/hbase98/bin/../lib/guice-servlet-3.0.jar:/root/hbase98/bin/../lib/hadoop-annotations-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-auth-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-hdfs-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-api-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/root/hbase98/bin/../lib/hamcrest-core-1.3.jar:/root/hbase98/bin/../lib/hbase-annotations-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-checkstyle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-client-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-examples-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop2-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-prefix-tree-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-protocol-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-resource-bundle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-rest-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-shell-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-testing-util-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-thrift-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/high-scale-lib-1.1.1.jar:/root/hbase98/bin/../lib/htrace-core-2.04.jar:/root/hbase98/bin/../lib/httpclient-4.1.3.jar:/root/hbase98/bin/../lib/httpcore-4.1.3.jar:/root/hbase98/bin/../lib/jackson-core-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-jaxrs-1.8.8.jar:/root/hbase98/bin/../lib/jackson-mapper-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-xc-1.8.8.jar:/root/hbase98/bin/../lib/jamon-runtime-2.4.1.jar:/root/hbase98/bin/../lib/jasper-compiler-5.5.23.jar:/root/hbase98/bin/../lib/jasper-runtime-5.5.23.jar:/root/hbase98/bin/../lib/javax.inject-1.jar:/root/hbase98/bin/../lib/javax.servlet-3.1.jar:/root/hbase98/bin/../lib/javax.servlet-api-3.0.1.jar:/root/hbase98/bin/../lib/jaxb-api-2.2.2.jar:/root/hbase98/bin/../lib/jaxb-impl-2.2.3-1.jar:/root/hbase98/bin/../lib/jcodings-1.0.8.jar:/root/hbase98/bin/../lib/jersey-client-1.8.jar:/root/hbase98/bin/../lib/jersey-core-1.8.jar:/root/hbase98/bin/../lib/jersey-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jersey-guice-1.9.jar:/root/hbase98/bin/../lib/jersey-json-1.8.jar:/root/hbase98/bin/../lib/jersey-server-1.8.jar:/root/hbase98/bin/../lib/jersey-test-framework-core-1.9.jar:/root/hbase98/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jets3t-0.6.1.jar:/root/hbase98/bin/../lib/jettison-1.3.1.jar:/root/hbase98/bin/../lib/jetty-6.1.26.jar:/root/hbase98/bin/../lib/jetty-sslengine-6.1.26.jar:/root/hbase98/bin/../lib/jetty-util-6.1.26.jar:/root/hbase98/bin/../lib/joni-2.1.2.jar:/root/hbase98/bin/../lib/jruby-complete-1.6.8.jar:/root/hbase98/bin/../lib/jsch-0.1.42.jar:/root/hbase98/bin/../lib/jsp-2.1-6.1.14.jar:/root/hbase98/bin/../lib/jsp-api-2.1-6.1.14.jar:/root/hbase98/bin/../lib/junit-4.11.jar:/root/hbase98/bin/../lib/libthrift-0.9.0.jar:/root/hbase98/bin/../lib/log4j-1.2.17.jar:/root/hbase98/bin/../lib/management-api-3.0.0-b012.jar:/root/hbase98/bin/../lib/metrics-core-2.2.0.jar:/root/hbase98/bin/../lib/netty-3.6.6.Final.jar:/root/hbase98/bin/../lib/paranamer-2.3.jar:/root/hbase98/bin/../lib/protobuf-java-2.5.0.jar:/root/hbase98/bin/../lib/servlet-api-2.5-6.1.14.jar:/root/hbase98/bin/../lib/slf4j-api-1.6.4.jar:/root/hbase98/bin/../lib/slf4j-log4j12-1.6.4.jar:/root/hbase98/bin/../lib/snappy-java-1.0.4.1.jar:/root/hbase98/bin/../lib/xmlenc-0.52.jar:/root/hbase98/bin/../lib/xz-1.0.jar:/root/hbase98/bin/../lib/zookeeper-3.4.6.jar:
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.name=Linux
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.arch=amd64
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.version=4.4.0-59-generic
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.name=root
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.home=/root
+2017-05-10 09:12:32,595 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.dir=/root/hbase98
+2017-05-10 09:12:32,596 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 90000 datadir /tmp/hbase-root/zookeeper/version-2 snapdir /tmp/hbase-root/zookeeper/version-2
+2017-05-10 09:12:32,596 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: FOLLOWING - LEADER ELECTION TOOK - 268
+2017-05-10 09:12:32,890 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Getting a diff from the leader 0x0
+2017-05-10 09:12:32,892 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] persistence.FileTxnSnapLog: Snapshotting: 0x0 to /tmp/hbase-root/zookeeper/version-2/snapshot.0
+2017-05-10 09:12:34,525 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:42462
+2017-05-10 09:12:34,532 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:42462
+2017-05-10 09:12:34,537 WARN  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Got zxid 0x100000001 expected 0x1
+2017-05-10 09:12:34,537 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.100000001
+2017-05-10 09:12:34,644 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0000 with negotiated timeout 90000 for client /172.18.0.2:42462
+2017-05-10 09:12:37,866 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.4:36542
+2017-05-10 09:12:37,869 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.4:36542
+2017-05-10 09:12:37,888 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0001 with negotiated timeout 90000 for client /172.18.0.4:36542
+2017-05-10 09:12:37,919 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:39834
+2017-05-10 09:12:37,926 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:39834
+2017-05-10 09:12:37,940 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0002 with negotiated timeout 90000 for client /172.18.0.3:39834
+2017-05-10 09:12:38,265 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:42486
+2017-05-10 09:12:38,268 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:42486
+2017-05-10 09:12:38,281 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0003 with negotiated timeout 90000 for client /172.18.0.2:42486
+2017-05-10 09:12:40,164 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:42522
+2017-05-10 09:12:40,165 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:42522
+2017-05-10 09:12:40,213 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0004 with negotiated timeout 90000 for client /172.18.0.2:42522
+2017-05-10 09:12:41,868 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:42546
+2017-05-10 09:12:41,868 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:42546
+2017-05-10 09:12:42,353 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0005 with negotiated timeout 90000 for client /172.18.0.2:42546
+2017-05-10 09:12:42,437 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:39908
+2017-05-10 09:12:42,437 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:39908
+2017-05-10 09:12:42,531 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0006 with negotiated timeout 90000 for client /172.18.0.3:39908
+2017-05-10 09:12:42,600 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:39912
+2017-05-10 09:12:42,612 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:39912
+2017-05-10 09:12:42,639 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bf1a19f7c0007 with negotiated timeout 90000 for client /172.18.0.3:39912
+2017-05-10 09:18:41,878 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:42546 which had sessionid 0x5bf1a19f7c0005
+2017-05-10 09:18:42,459 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.3:39908 which had sessionid 0x5bf1a19f7c0006
+2017-05-10 09:18:42,625 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.3:39912 which had sessionid 0x5bf1a19f7c0007
+2017-05-10 13:09:54,350 WARN  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Exception when following the leader
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchiFri May 12 01:59:20 UTC 2017 Starting zookeeper on hadoop-master
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 30718
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1048576
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) unlimited
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2017-05-12 01:59:21,292 INFO  [main] quorum.QuorumPeerConfig: Defaulting to majority quorums
+2017-05-12 01:59:21,360 DEBUG [main] hadoop.hbase: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase
+2017-05-12 01:59:21,360 DEBUG [main] util.UnsafeAvailChecker: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAvailChecker
+2017-05-12 01:59:21,361 DEBUG [main] zookeeper.ZKConfig: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.zookeeper.ZKConfig
+2017-05-12 01:59:21,361 DEBUG [main] util.VersionInfo: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.util.VersionInfo
+2017-05-12 01:59:21,361 DEBUG [main] util.UnsafeAccess: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAccess
+2017-05-12 01:59:21,362 DEBUG [main] hbase.HBaseConfiguration: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.HBaseConfiguration
+2017-05-12 01:59:21,362 DEBUG [main] util.Bytes: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@440ee479, name=log4j:logger=org.apache.hadoop.hbase.util.Bytes
+2017-05-12 01:59:21,362 INFO  [main] quorum.QuorumPeerMain: Starting quorum peer
+2017-05-12 01:59:21,374 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2017-05-12 01:59:21,392 INFO  [main] quorum.QuorumPeer: tickTime set to 3000
+2017-05-12 01:59:21,392 INFO  [main] quorum.QuorumPeer: minSessionTimeout set to -1
+2017-05-12 01:59:21,392 INFO  [main] quorum.QuorumPeer: maxSessionTimeout set to 90000
+2017-05-12 01:59:21,392 INFO  [main] quorum.QuorumPeer: initLimit set to 10
+2017-05-12 01:59:21,404 INFO  [main] quorum.QuorumPeer: currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-12 01:59:21,472 INFO  [main] quorum.QuorumPeer: acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-12 01:59:21,562 INFO  [Thread-2] quorum.QuorumCnxManager: My election bind port: hadoop-master/172.18.0.2:3888
+2017-05-12 01:59:21,569 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: LOOKING
+2017-05-12 01:59:21,571 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.FastLeaderElection: New election. My id =  0, proposed zxid=0x0
+2017-05-12 01:59:21,572 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,611 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.3:41548
+2017-05-12 01:59:21,611 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (1, 0)
+2017-05-12 01:59:21,612 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-12 01:59:21,615 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:50346
+2017-05-12 01:59:21,616 WARN  [SendWorker:2] quorum.QuorumCnxManager: Exception when using channel: for id 2 my id = 0 error = java.net.SocketException: Broken pipe (Write failed)
+2017-05-12 01:59:21,616 WARN  [SendWorker:2] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-12 01:59:21,616 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,616 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Connection broken for id 2, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:765)
+2017-05-12 01:59:21,617 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,618 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-12 01:59:21,617 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-12 01:59:21,625 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:50360
+2017-05-12 01:59:21,625 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,625 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,627 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,636 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Connection broken for id 2, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:765)
+2017-05-12 01:59:21,637 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:50364
+2017-05-12 01:59:21,637 WARN  [SendWorker:2] quorum.QuorumCnxManager: Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2095)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:389)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:849)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$500(QuorumCnxManager.java:64)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:685)
+2017-05-12 01:59:21,638 WARN  [SendWorker:2] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-12 01:59:21,638 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-12 01:59:21,646 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 01:59:21,846 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: FOLLOWING
+2017-05-12 01:59:21,851 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: TCP NoDelay set to: true
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:host.name=hadoop-master
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.version=1.7.0_121
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2017-05-12 01:59:21,856 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.class.path=/root/hbase98/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar:/root/hbase98/bin/..:/root/hbase98/bin/../lib/activation-1.1.jar:/root/hbase98/bin/../lib/aopalliance-1.0.jar:/root/hbase98/bin/../lib/asm-3.1.jar:/root/hbase98/bin/../lib/avro-1.7.4.jar:/root/hbase98/bin/../lib/commons-beanutils-1.7.0.jar:/root/hbase98/bin/../lib/commons-beanutils-core-1.8.0.jar:/root/hbase98/bin/../lib/commons-cli-1.2.jar:/root/hbase98/bin/../lib/commons-codec-1.7.jar:/root/hbase98/bin/../lib/commons-collections-3.2.2.jar:/root/hbase98/bin/../lib/commons-compress-1.4.1.jar:/root/hbase98/bin/../lib/commons-configuration-1.6.jar:/root/hbase98/bin/../lib/commons-daemon-1.0.13.jar:/root/hbase98/bin/../lib/commons-digester-1.8.jar:/root/hbase98/bin/../lib/commons-el-1.0.jar:/root/hbase98/bin/../lib/commons-httpclient-3.1.jar:/root/hbase98/bin/../lib/commons-io-2.4.jar:/root/hbase98/bin/../lib/commons-lang-2.6.jar:/root/hbase98/bin/../lib/commons-logging-1.1.1.jar:/root/hbase98/bin/../lib/commons-math-2.1.jar:/root/hbase98/bin/../lib/commons-net-3.1.jar:/root/hbase98/bin/../lib/findbugs-annotations-1.3.9-1.jar:/root/hbase98/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/root/hbase98/bin/../lib/grizzly-framework-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-server-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-servlet-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-rcm-2.1.2.jar:/root/hbase98/bin/../lib/guava-12.0.1.jar:/root/hbase98/bin/../lib/guice-3.0.jar:/root/hbase98/bin/../lib/guice-servlet-3.0.jar:/root/hbase98/bin/../lib/hadoop-annotations-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-auth-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-hdfs-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-api-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/root/hbase98/bin/../lib/hamcrest-core-1.3.jar:/root/hbase98/bin/../lib/hbase-annotations-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-checkstyle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-client-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-examples-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop2-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-prefix-tree-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-protocol-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-resource-bundle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-rest-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-shell-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-testing-util-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-thrift-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/high-scale-lib-1.1.1.jar:/root/hbase98/bin/../lib/htrace-core-2.04.jar:/root/hbase98/bin/../lib/httpclient-4.1.3.jar:/root/hbase98/bin/../lib/httpcore-4.1.3.jar:/root/hbase98/bin/../lib/jackson-core-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-jaxrs-1.8.8.jar:/root/hbase98/bin/../lib/jackson-mapper-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-xc-1.8.8.jar:/root/hbase98/bin/../lib/jamon-runtime-2.4.1.jar:/root/hbase98/bin/../lib/jasper-compiler-5.5.23.jar:/root/hbase98/bin/../lib/jasper-runtime-5.5.23.jar:/root/hbase98/bin/../lib/javax.inject-1.jar:/root/hbase98/bin/../lib/javax.servlet-3.1.jar:/root/hbase98/bin/../lib/javax.servlet-api-3.0.1.jar:/root/hbase98/bin/../lib/jaxb-api-2.2.2.jar:/root/hbase98/bin/../lib/jaxb-impl-2.2.3-1.jar:/root/hbase98/bin/../lib/jcodings-1.0.8.jar:/root/hbase98/bin/../lib/jersey-client-1.8.jar:/root/hbase98/bin/../lib/jersey-core-1.8.jar:/root/hbase98/bin/../lib/jersey-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jersey-guice-1.9.jar:/root/hbase98/bin/../lib/jersey-json-1.8.jar:/root/hbase98/bin/../lib/jersey-server-1.8.jar:/root/hbase98/bin/../lib/jersey-test-framework-core-1.9.jar:/root/hbase98/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jets3t-0.6.1.jar:/root/hbase98/bin/../lib/jettison-1.3.1.jar:/root/hbase98/bin/../lib/jetty-6.1.26.jar:/root/hbase98/bin/../lib/jetty-sslengine-6.1.26.jar:/root/hbase98/bin/../lib/jetty-util-6.1.26.jar:/root/hbase98/bin/../lib/joni-2.1.2.jar:/root/hbase98/bin/../lib/jruby-complete-1.6.8.jar:/root/hbase98/bin/../lib/jsch-0.1.42.jar:/root/hbase98/bin/../lib/jsp-2.1-6.1.14.jar:/root/hbase98/bin/../lib/jsp-api-2.1-6.1.14.jar:/root/hbase98/bin/../lib/junit-4.11.jar:/root/hbase98/bin/../lib/libthrift-0.9.0.jar:/root/hbase98/bin/../lib/log4j-1.2.17.jar:/root/hbase98/bin/../lib/management-api-3.0.0-b012.jar:/root/hbase98/bin/../lib/metrics-core-2.2.0.jar:/root/hbase98/bin/../lib/netty-3.6.6.Final.jar:/root/hbase98/bin/../lib/paranamer-2.3.jar:/root/hbase98/bin/../lib/protobuf-java-2.5.0.jar:/root/hbase98/bin/../lib/servlet-api-2.5-6.1.14.jar:/root/hbase98/bin/../lib/slf4j-api-1.6.4.jar:/root/hbase98/bin/../lib/slf4j-log4j12-1.6.4.jar:/root/hbase98/bin/../lib/snappy-java-1.0.4.1.jar:/root/hbase98/bin/../lib/xmlenc-0.52.jar:/root/hbase98/bin/../lib/xz-1.0.jar:/root/hbase98/bin/../lib/zookeeper-3.4.6.jar:
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.name=Linux
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.arch=amd64
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.version=4.4.0-77-generic
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.name=root
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.home=/root
+2017-05-12 01:59:21,857 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.dir=/root/hbase98
+2017-05-12 01:59:21,858 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 90000 datadir /tmp/hbase-root/zookeeper/version-2 snapdir /tmp/hbase-root/zookeeper/version-2
+2017-05-12 01:59:21,858 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: FOLLOWING - LEADER ELECTION TOOK - 287
+2017-05-12 01:59:21,981 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Getting a diff from the leader 0x0
+2017-05-12 01:59:21,983 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] persistence.FileTxnSnapLog: Snapshotting: 0x0 to /tmp/hbase-root/zookeeper/version-2/snapshot.0
+2017-05-12 01:59:29,001 WARN  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Got zxid 0x100000001 expected 0x1
+2017-05-12 01:59:29,001 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.100000001
+2017-05-12 01:59:37,620 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.4:58466
+2017-05-12 01:59:37,624 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.4:58466
+2017-05-12 01:59:37,674 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfa61c07f0000 with negotiated timeout 90000 for client /172.18.0.4:58466
+2017-05-12 01:59:40,390 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:44118
+2017-05-12 01:59:40,390 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:44118
+2017-05-12 01:59:40,438 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfa61c07f0001 with negotiated timeout 90000 for client /172.18.0.3:44118
+2017-05-12 02:05:37,623 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.4:58466 which had sessionid 0x5bfa61c07f0000
+2017-05-12 02:05:40,416 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x5bfa61c07f0001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-12 02:05:40,416 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.3:44118 which had sessionid 0x5bfa61c07f0001
+2017-05-12 05:39:45,017 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:53748
+2017-05-12 05:39:45,056 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:53748
+2017-05-12 05:39:45,165 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfa61c07f0002 with negotiated timeout 90000 for client /172.18.0.2:53748
+2017-05-12 05:45:37,500 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:53748 which had sessionid 0x5bfa61c07f0002
+2017-05-12 05:51:57,842 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:56096
+2017-05-12 05:51:57,842 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:56096
+2017-05-12 05:51:57,867 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfa61c07f0003 with negotiated timeout 90000 for client /172.18.0.2:56096
+2017-05-12 05:57:37,510 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:56096 which had sessionid 0x5bfa61c07f0003
+2017-05-12 05:58:11,260 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:57234
+2017-05-12 05:58:11,260 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:57234
+2017-05-12 05:58:11,285 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfa61c07f0004 with negotiated timeout 90000 for client /172.18.0.2:57234
+2017-05-12 06:03:37,511 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:57234 which had sessionid 0x5bfa61c07f0004
+Fri May 12 06:22:59 UTC 2017 Starting zookeeper on hadoop-master
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 30718
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1048576
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) unlimited
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2017-05-12 06:23:00,464 INFO  [main] quorum.QuorumPeerConfig: Defaulting to majority quorums
+2017-05-12 06:23:00,535 DEBUG [main] hadoop.hbase: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase
+2017-05-12 06:23:00,536 DEBUG [main] util.UnsafeAvailChecker: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAvailChecker
+2017-05-12 06:23:00,537 DEBUG [main] zookeeper.ZKConfig: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.zookeeper.ZKConfig
+2017-05-12 06:23:00,537 DEBUG [main] util.VersionInfo: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.util.VersionInfo
+2017-05-12 06:23:00,538 DEBUG [main] util.UnsafeAccess: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.util.UnsafeAccess
+2017-05-12 06:23:00,538 DEBUG [main] hbase.HBaseConfiguration: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.HBaseConfiguration
+2017-05-12 06:23:00,538 DEBUG [main] util.Bytes: preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@2db9e6d7, name=log4j:logger=org.apache.hadoop.hbase.util.Bytes
+2017-05-12 06:23:00,539 INFO  [main] quorum.QuorumPeerMain: Starting quorum peer
+2017-05-12 06:23:00,550 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2017-05-12 06:23:00,566 INFO  [main] quorum.QuorumPeer: tickTime set to 3000
+2017-05-12 06:23:00,566 INFO  [main] quorum.QuorumPeer: minSessionTimeout set to -1
+2017-05-12 06:23:00,567 INFO  [main] quorum.QuorumPeer: maxSessionTimeout set to 90000
+2017-05-12 06:23:00,567 INFO  [main] quorum.QuorumPeer: initLimit set to 10
+2017-05-12 06:23:00,584 INFO  [main] quorum.QuorumPeer: currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-12 06:23:00,679 INFO  [main] quorum.QuorumPeer: acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2017-05-12 06:23:00,744 INFO  [Thread-2] quorum.QuorumCnxManager: My election bind port: hadoop-master/172.18.0.2:3888
+2017-05-12 06:23:00,750 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: LOOKING
+2017-05-12 06:23:00,752 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.FastLeaderElection: New election. My id =  0, proposed zxid=0x0
+2017-05-12 06:23:00,753 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,769 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.3:48102
+2017-05-12 06:23:00,772 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (1, 0)
+2017-05-12 06:23:00,772 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-12 06:23:00,773 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,773 INFO  [WorkerSender[myid=0]] quorum.QuorumCnxManager: Have smaller server identifier, so dropping the connection: (2, 0)
+2017-05-12 06:23:00,773 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,774 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:58216
+2017-05-12 06:23:00,778 WARN  [RecvWorker:1] quorum.QuorumCnxManager: Connection broken for id 1, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:765)
+2017-05-12 06:23:00,780 WARN  [RecvWorker:1] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-12 06:23:00,781 WARN  [SendWorker:1] quorum.QuorumCnxManager: Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2095)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:389)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:849)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$500(QuorumCnxManager.java:64)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:685)
+2017-05-12 06:23:00,781 WARN  [SendWorker:1] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-12 06:23:00,781 WARN  [SendWorker:2] quorum.QuorumCnxManager: Exception when using channel: for id 2 my id = 0 error = java.net.SocketException: Broken pipe (Write failed)
+2017-05-12 06:23:00,781 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Connection broken for id 2, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:765)
+2017-05-12 06:23:00,781 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.3:48114
+2017-05-12 06:23:00,781 WARN  [SendWorker:2] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-12 06:23:00,782 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-12 06:23:00,782 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:58222
+2017-05-12 06:23:00,795 INFO  [hadoop-master/172.18.0.2:3888] quorum.QuorumCnxManager: Received connection request /172.18.0.4:58224
+2017-05-12 06:23:00,795 ERROR [SendWorker:2] quorum.QuorumCnxManager: Failed to send last message. Shutting down thread.
+java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:140)
+	at java.io.DataOutputStream.writeInt(DataOutputStream.java:198)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.send(QuorumCnxManager.java:642)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:669)
+2017-05-12 06:23:00,796 WARN  [SendWorker:2] quorum.QuorumCnxManager: Send worker leaving thread
+2017-05-12 06:23:00,796 WARN  [RecvWorker:2] quorum.QuorumCnxManager: Interrupting SendWorker
+2017-05-12 06:23:00,797 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,797 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,798 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:00,804 INFO  [WorkerReceiver[myid=0]] quorum.FastLeaderElection: Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2017-05-12 06:23:01,005 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.QuorumPeer: FOLLOWING
+2017-05-12 06:23:01,030 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: TCP NoDelay set to: true
+2017-05-12 06:23:01,034 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:host.name=hadoop-master
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.version=1.7.0_121
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.class.path=/root/hbase98/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar:/root/hbase98/bin/..:/root/hbase98/bin/../lib/activation-1.1.jar:/root/hbase98/bin/../lib/aopalliance-1.0.jar:/root/hbase98/bin/../lib/asm-3.1.jar:/root/hbase98/bin/../lib/avro-1.7.4.jar:/root/hbase98/bin/../lib/commons-beanutils-1.7.0.jar:/root/hbase98/bin/../lib/commons-beanutils-core-1.8.0.jar:/root/hbase98/bin/../lib/commons-cli-1.2.jar:/root/hbase98/bin/../lib/commons-codec-1.7.jar:/root/hbase98/bin/../lib/commons-collections-3.2.2.jar:/root/hbase98/bin/../lib/commons-compress-1.4.1.jar:/root/hbase98/bin/../lib/commons-configuration-1.6.jar:/root/hbase98/bin/../lib/commons-daemon-1.0.13.jar:/root/hbase98/bin/../lib/commons-digester-1.8.jar:/root/hbase98/bin/../lib/commons-el-1.0.jar:/root/hbase98/bin/../lib/commons-httpclient-3.1.jar:/root/hbase98/bin/../lib/commons-io-2.4.jar:/root/hbase98/bin/../lib/commons-lang-2.6.jar:/root/hbase98/bin/../lib/commons-logging-1.1.1.jar:/root/hbase98/bin/../lib/commons-math-2.1.jar:/root/hbase98/bin/../lib/commons-net-3.1.jar:/root/hbase98/bin/../lib/findbugs-annotations-1.3.9-1.jar:/root/hbase98/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/root/hbase98/bin/../lib/grizzly-framework-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-server-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-http-servlet-2.1.2.jar:/root/hbase98/bin/../lib/grizzly-rcm-2.1.2.jar:/root/hbase98/bin/../lib/guava-12.0.1.jar:/root/hbase98/bin/../lib/guice-3.0.jar:/root/hbase98/bin/../lib/guice-servlet-3.0.jar:/root/hbase98/bin/../lib/hadoop-annotations-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-auth-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-hdfs-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-api-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-client-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/root/hbase98/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/root/hbase98/bin/../lib/hamcrest-core-1.3.jar:/root/hbase98/bin/../lib/hbase-annotations-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-checkstyle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-client-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-common-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-examples-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-hadoop2-compat-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-it-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-prefix-tree-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-protocol-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-resource-bundle-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-rest-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2-tests.jar:/root/hbase98/bin/../lib/hbase-server-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-shell-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-testing-util-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/hbase-thrift-0.98.24-hadoop2.jar:/root/hbase98/bin/../lib/high-scale-lib-1.1.1.jar:/root/hbase98/bin/../lib/htrace-core-2.04.jar:/root/hbase98/bin/../lib/httpclient-4.1.3.jar:/root/hbase98/bin/../lib/httpcore-4.1.3.jar:/root/hbase98/bin/../lib/jackson-core-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-jaxrs-1.8.8.jar:/root/hbase98/bin/../lib/jackson-mapper-asl-1.8.8.jar:/root/hbase98/bin/../lib/jackson-xc-1.8.8.jar:/root/hbase98/bin/../lib/jamon-runtime-2.4.1.jar:/root/hbase98/bin/../lib/jasper-compiler-5.5.23.jar:/root/hbase98/bin/../lib/jasper-runtime-5.5.23.jar:/root/hbase98/bin/../lib/javax.inject-1.jar:/root/hbase98/bin/../lib/javax.servlet-3.1.jar:/root/hbase98/bin/../lib/javax.servlet-api-3.0.1.jar:/root/hbase98/bin/../lib/jaxb-api-2.2.2.jar:/root/hbase98/bin/../lib/jaxb-impl-2.2.3-1.jar:/root/hbase98/bin/../lib/jcodings-1.0.8.jar:/root/hbase98/bin/../lib/jersey-client-1.8.jar:/root/hbase98/bin/../lib/jersey-core-1.8.jar:/root/hbase98/bin/../lib/jersey-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jersey-guice-1.9.jar:/root/hbase98/bin/../lib/jersey-json-1.8.jar:/root/hbase98/bin/../lib/jersey-server-1.8.jar:/root/hbase98/bin/../lib/jersey-test-framework-core-1.9.jar:/root/hbase98/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/root/hbase98/bin/../lib/jets3t-0.6.1.jar:/root/hbase98/bin/../lib/jettison-1.3.1.jar:/root/hbase98/bin/../lib/jetty-6.1.26.jar:/root/hbase98/bin/../lib/jetty-sslengine-6.1.26.jar:/root/hbase98/bin/../lib/jetty-util-6.1.26.jar:/root/hbase98/bin/../lib/joni-2.1.2.jar:/root/hbase98/bin/../lib/jruby-complete-1.6.8.jar:/root/hbase98/bin/../lib/jsch-0.1.42.jar:/root/hbase98/bin/../lib/jsp-2.1-6.1.14.jar:/root/hbase98/bin/../lib/jsp-api-2.1-6.1.14.jar:/root/hbase98/bin/../lib/junit-4.11.jar:/root/hbase98/bin/../lib/libthrift-0.9.0.jar:/root/hbase98/bin/../lib/log4j-1.2.17.jar:/root/hbase98/bin/../lib/management-api-3.0.0-b012.jar:/root/hbase98/bin/../lib/metrics-core-2.2.0.jar:/root/hbase98/bin/../lib/netty-3.6.6.Final.jar:/root/hbase98/bin/../lib/paranamer-2.3.jar:/root/hbase98/bin/../lib/protobuf-java-2.5.0.jar:/root/hbase98/bin/../lib/servlet-api-2.5-6.1.14.jar:/root/hbase98/bin/../lib/slf4j-api-1.6.4.jar:/root/hbase98/bin/../lib/slf4j-log4j12-1.6.4.jar:/root/hbase98/bin/../lib/snappy-java-1.0.4.1.jar:/root/hbase98/bin/../lib/xmlenc-0.52.jar:/root/hbase98/bin/../lib/xz-1.0.jar:/root/hbase98/bin/../lib/zookeeper-3.4.6.jar:
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.name=Linux
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.arch=amd64
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:os.version=4.4.0-77-generic
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.name=root
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.home=/root
+2017-05-12 06:23:01,035 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Server environment:user.dir=/root/hbase98
+2017-05-12 06:23:01,036 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] server.ZooKeeperServer: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 90000 datadir /tmp/hbase-root/zookeeper/version-2 snapdir /tmp/hbase-root/zookeeper/version-2
+2017-05-12 06:23:01,037 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: FOLLOWING - LEADER ELECTION TOOK - 285
+2017-05-12 06:23:01,166 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Getting a diff from the leader 0x0
+2017-05-12 06:23:01,168 INFO  [QuorumPeer[myid=0]/0.0.0.0:2181] persistence.FileTxnSnapLog: Snapshotting: 0x0 to /tmp/hbase-root/zookeeper/version-2/snapshot.0
+2017-05-12 06:23:04,957 WARN  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Got zxid 0x100000001 expected 0x1
+2017-05-12 06:23:04,959 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.100000001
+2017-05-12 06:23:05,539 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54744
+2017-05-12 06:23:05,544 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54744
+2017-05-12 06:23:05,573 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300000 with negotiated timeout 90000 for client /172.18.0.2:54744
+2017-05-12 06:23:06,777 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54758
+2017-05-12 06:23:06,777 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54758
+2017-05-12 06:23:06,786 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300001 with negotiated timeout 90000 for client /172.18.0.2:54758
+2017-05-12 06:23:06,875 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:53068
+2017-05-12 06:23:06,878 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.4:38854
+2017-05-12 06:23:06,879 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.4:38854
+2017-05-12 06:23:06,879 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:53068
+2017-05-12 06:23:06,901 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54764
+2017-05-12 06:23:06,901 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54764
+2017-05-12 06:23:06,902 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300002 with negotiated timeout 90000 for client /172.18.0.4:38854
+2017-05-12 06:23:06,903 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300003 with negotiated timeout 90000 for client /172.18.0.3:53068
+2017-05-12 06:23:06,919 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300004 with negotiated timeout 90000 for client /172.18.0.2:54764
+2017-05-12 06:23:07,033 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54766
+2017-05-12 06:23:07,034 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54766
+2017-05-12 06:23:07,053 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300005 with negotiated timeout 90000 for client /172.18.0.2:54766
+2017-05-12 06:23:08,168 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.4:38886
+2017-05-12 06:23:08,169 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.4:38886
+2017-05-12 06:23:08,192 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54796
+2017-05-12 06:23:08,192 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54796
+2017-05-12 06:23:08,205 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300006 with negotiated timeout 90000 for client /172.18.0.4:38886
+2017-05-12 06:23:08,214 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300007 with negotiated timeout 90000 for client /172.18.0.2:54796
+2017-05-12 06:23:08,322 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.3:53112
+2017-05-12 06:23:08,323 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.3:53112
+2017-05-12 06:23:08,344 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300008 with negotiated timeout 90000 for client /172.18.0.3:53112
+2017-05-12 06:23:19,790 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /172.18.0.2:54850
+2017-05-12 06:23:19,791 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /172.18.0.2:54850
+2017-05-12 06:23:19,805 INFO  [CommitProcessor:0] server.ZooKeeperServer: Established session 0x5bfb5322300009 with negotiated timeout 90000 for client /172.18.0.2:54850
+2017-05-12 06:29:06,883 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.3:53068 which had sessionid 0x5bfb5322300003
+2017-05-12 06:29:06,897 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.4:38854 which had sessionid 0x5bfb5322300002
+2017-05-12 06:29:06,914 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:54764 which had sessionid 0x5bfb5322300004
+2017-05-12 06:29:08,198 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.4:38886 which had sessionid 0x5bfb5322300006
+2017-05-12 06:29:08,230 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:54796 which had sessionid 0x5bfb5322300007
+2017-05-12 06:29:08,331 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.3:53112 which had sessionid 0x5bfb5322300008
+2017-05-12 06:29:19,797 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:54850 which had sessionid 0x5bfb5322300009
+2017-05-12 06:31:06,785 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /172.18.0.2:54758 which had sessionid 0x5bfb5322300001
+2017-05-12 08:28:02,185 WARN  [QuorumPeer[myid=0]/0.0.0.0:2181] quorum.Learner: Exception when following the leader
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:63)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:83)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:103)
+	at org.apache.zookeeper.server.quorum.Learner.readPacket(Learner.java:153)
+	at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:85)
+	at org.apache.zookeeper.server.quorum.QuorumPeer.run(QuorumPeer.java:786)

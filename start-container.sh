@@ -2,7 +2,7 @@
 
 # the default node number is 3
 N=${1:-3}
-
+tag=1.2
 
 # start hadoop master container
 sudo docker rm -f hadoop-master &> /dev/null
@@ -12,8 +12,10 @@ sudo docker run -itd \
                 -p 50070:50070 \
                 -p 8088:8088 \
                 --name hadoop-master \
+				-v $PWD/data/hbase98:/root/hbase98 \
+				-v $PWD/data/master_hdfs:/root/hdfs \
                 --hostname hadoop-master \
-                kiwenlau/hadoop:1.0 &> /dev/null
+                kiwenlau/hadoop:$tag &> /dev/null
 
 
 # start hadoop slave container
@@ -24,9 +26,11 @@ do
 	echo "start hadoop-slave$i container..."
 	sudo docker run -itd \
 	                --net=hadoop \
+					-v $PWD/data/hbase98:/root/hbase98 \
+					-v $PWD/data/slave_hdfs$i:/root/hdfs \
 	                --name hadoop-slave$i \
 	                --hostname hadoop-slave$i \
-	                kiwenlau/hadoop:1.0 &> /dev/null
+	                kiwenlau/hadoop:$tag &> /dev/null
 	i=$(( $i + 1 ))
 done 
 

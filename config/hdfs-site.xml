@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <configuration>
+    <!--it is very wired, if you define this then hadoop will run with errors when you mapred-->
+    <!-- <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:///root/hdfs/tmp</value>
+        <description>NameNode directory for namespace and transaction logs storage.</description>
+    </property> -->
     <property>
         <name>dfs.namenode.name.dir</name>
         <value>file:///root/hdfs/namenode</value>
